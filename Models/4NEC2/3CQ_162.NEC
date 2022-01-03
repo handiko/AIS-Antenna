@@ -1,0 +1,36 @@
+CM 
+CE
+SY freq=162
+SY H=5
+SY R=1.97304
+SY D=1.90904
+SY dir=1.83296
+SY Rs=R/8
+SY Ds=D/8
+SY dirs=dir/8
+SY RD=0.382
+SY Ddir=0.3606
+SY B=RD+Ddir
+SY Rx=-B/2
+SY dirx=B/2
+SY Dx=dirx-Ddir
+SY wr=0.5*1e-3
+GW	1	11	Dx	Ds	H-Ds	Dx	-Ds	H-Ds	wr
+GW	2	11	Dx	Ds	H+Ds	Dx	-Ds	H+Ds	wr
+GW	3	11	Dx	Ds	H-Ds	Dx	Ds	H+Ds	wr
+GW	4	11	Dx	-Ds	H-Ds	Dx	-Ds	H+Ds	wr
+GW	5	11	Rx	Rs	H-Rs	Rx	-Rs	H-Rs	wr
+GW	6	11	Rx	Rs	H+Rs	Rx	-Rs	H+Rs	wr
+GW	7	11	Rx	Rs	H-Rs	Rx	Rs	H+Rs	wr
+GW	8	11	Rx	-Rs	H-Rs	Rx	-Rs	H+Rs	wr
+GW	9	11	dirx	dirs	H-dirs	dirx	-dirs	H-dirs	wr
+GW	10	11	dirx	dirs	H+dirs	dirx	-dirs	H+dirs	wr
+GW	11	11	dirx	dirs	H-dirs	dirx	dirs	H+dirs	wr
+GW	12	11	dirx	-dirs	H-dirs	dirx	-dirs	H+dirs	wr
+GE	1
+LD	5	0	0	0	58000000
+GN	2	0	0	0	17	0.015
+EK
+EX	0	3	6	0	1	0	0
+FR	0	0	0	0	freq	0
+EN
