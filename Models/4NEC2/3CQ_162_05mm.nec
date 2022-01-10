@@ -2,14 +2,14 @@ CM
 CE
 SY freq=162
 SY H=5
-SY R=1.96406
-SY D=1.90602
-SY dir=1.84793
+SY R=1.961024
+SY D=1.903024
+SY dir=1.840048
 SY Rs=R/8
 SY Ds=D/8
 SY dirs=dir/8
-SY RD=0.415
-SY Ddir=0.3336
+SY RD=0.3916
+SY Ddir=0.3546
 SY B=RD+Ddir
 SY Rx=-B/2
 SY dirx=B/2
